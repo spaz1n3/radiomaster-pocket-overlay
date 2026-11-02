@@ -4,7 +4,7 @@
   position: relative;
   width: 800px;
   height: 600px;
-  background: url("./controller.png") center center / 800px 600px no-repeat;
+  background: url("./controller[1].png") center center / 800px 600px no-repeat;
 }
 .controller.custom.disconnected {
   background-image: url("./disconnected.png");
@@ -27,12 +27,12 @@
 .custom .stick.left {
   left: 0;
   top: 0;
-  background-image: url("./left_stick.png");
+  background-image: url("./left_stick[1].png");
 }
 .custom .stick.right {
   left: 380px;
   top: 0;
-  background-image: url("./right_stick.png");
+  background-image: url("./right_stick[1].png");
 }
 /* Do not hide the stick container! */
 .custom.disconnected .sticks {display:none;}
