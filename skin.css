@@ -10,18 +10,6 @@
     background: url("./controller.png") center center / 800px 600px no-repeat;
 }
 
-/* DISCONNECTED STATE */
-.controller.custom.disconnected {
-    background-image: url("./disconnected.png");
-}
-
-.custom.disconnected .sticks,
-.custom.disconnected .buttons,
-.custom.disconnected .dpad,
-.custom.disconnected .triggers {
-    display: none;
-}
-
 /* STICKS */
 .custom .sticks {
     position: absolute;
