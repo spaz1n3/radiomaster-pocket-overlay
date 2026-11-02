@@ -1,19 +1,70 @@
-/* RadioMaster Pocket — Gamepad Viewer custom skin (Mode 2) */
+/* RADIOMASTER POCKET - MODE 2 */
+/* SCALED GAMEPAD VIEWER OVERLAY */
+
+/* MAIN CONTROLLER */
 .controller.custom {
-  width:800px; height:600px; position:relative;
-  background:url("controller.png") center center / 800px 600px no-repeat;
+    position: relative;
+    width: 800px;
+    height: 600px;
+
+    background-image: url("./controller.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 800px 600px;
+
+    /* Scale entire controller */
+    transform: scale(0.32);
+    transform-origin: top left;
 }
+
+/* DISCONNECTED */
 .controller.custom.disconnected {
-  background-image:url("disconnected.png");
+    background-image: url("./disconnected.png");
 }
-.custom.disconnected .sticks, .custom.disconnected .buttons,
-.custom.disconnected .dpad, .custom.disconnected .triggers {display:none;}
-/* Stick wrappers. Adjust these positions to match the image in your browser. */
-.custom .sticks {position:absolute;inset:0;}
-.custom .stick {position:absolute;width:74px;height:74px;background-size:74px 74px;background-repeat:no-repeat;}
-.custom .stick.left {left:147px;top:189px;background-image:url("left_stick.png");}
-.custom .stick.right {left:553px;top:189px;background-image:url("right_stick.png");}
-/* Hide unsupported generic gamepad elements until mapped to Pocket switches. */
-.custom .buttons, .custom .dpad, .custom .triggers,
-.custom .bumpers, .custom .quadrant, .custom .arrows,
-.custom .start, .custom .back, .custom .meta {display:none;}
+
+.custom.disconnected .sticks,
+.custom.disconnected .buttons,
+.custom.disconnected .dpad {
+    display: none;
+}
+
+/* STICKS */
+.custom .sticks {
+    position: absolute;
+    inset: 0;
+}
+
+.custom .stick {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* LEFT STICK */
+.custom .stick.left {
+    left: 147px;
+    top: 189px;
+    background-image: url("./left_stick.png");
+}
+
+/* RIGHT STICK */
+.custom .stick.right {
+    left: 553px;
+    top: 189px;
+    background-image: url("./right_stick.png");
+}
+
+/* HIDE UNUSED CONTROLS */
+.custom .buttons,
+.custom .dpad,
+.custom .triggers,
+.custom .bumpers,
+.custom .quadrant,
+.custom .arrows,
+.custom .start,
+.custom .back,
+.custom .meta {
+    display: none;
+}
