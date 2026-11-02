@@ -1,16 +1,43 @@
-
-/* TEMPORARY CLIPPING TEST */
-
+/* RadioMaster Pocket - Gamepad Viewer - Mode 2 */
+/* Image coordinates based on the 800 x 600 artwork. */
 .controller.custom {
-    overflow: visible !important;
-    background-position: center center !important;
+  position: relative;
+  width: 800px;
+  height: 600px;
+  background: url("./controller.png") center center / 800px 600px no-repeat;
 }
-
+.controller.custom.disconnected {
+  background-image: url("./disconnected.png");
+}
+/* Gamepad Viewer changes the stick element positions in real time. */
 .custom .sticks {
-    overflow: visible !important;
+  position: absolute;
+  top: 205px;
+  left: 160px;
+  width: 496px;
+  height: 116px;
 }
-
-/* Hide moving stick graphics temporarily */
 .custom .stick {
-    display: none !important;
+  position: absolute;
+  width: 116px;
+  height: 116px;
+  background-size: 116px 116px;
+  background-repeat: no-repeat;
 }
+.custom .stick.left {
+  left: 0;
+  top: 0;
+  background-image: url("./left_stick.png");
+}
+.custom .stick.right {
+  left: 380px;
+  top: 0;
+  background-image: url("./right_stick.png");
+}
+/* Do not hide the stick container! */
+.custom.disconnected .sticks {display:none;}
+/* Unmapped standard gamepad controls */
+.custom .abxy, .custom .buttons, .custom .dpad,
+.custom .triggers, .custom .bumpers, .custom .quadrant,
+.custom .arrows, .custom .start, .custom .back,
+.custom .meta {display:none;}
