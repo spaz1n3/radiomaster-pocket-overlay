@@ -1,17 +1,20 @@
 
-/* RADIOMASTER POCKET - COMPACT OVERLAY */
+/* RADIOMASTER POCKET - POSITION TEST */
 
 .controller.custom {
     position: relative !important;
-    width: 256px !important;
-    height: 192px !important;
-    margin: 0 auto !important;
+
+    width: 800px !important;
+    height: 600px !important;
 
     background-image: url("./controller.png") !important;
-    background-position: center center !important;
     background-repeat: no-repeat !important;
-    background-size: 256px 192px !important;
+    background-position: center center !important;
+    background-size: contain !important;
 
+    top: 0 !important;
+    left: 0 !important;
+    margin: 0 !important;
     transform: none !important;
 }
 
@@ -20,7 +23,7 @@
     background-image: url("./disconnected.png") !important;
 }
 
-/* TEMPORARILY HIDE OTHER ELEMENTS */
+/* HIDE CONTROLS DURING POSITION TEST */
 .custom .sticks,
 .custom .buttons,
 .custom .dpad,
