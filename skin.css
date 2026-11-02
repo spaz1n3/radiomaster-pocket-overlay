@@ -1,50 +1,16 @@
 
-/* RADIOMASTER POCKET - MODE 2 */
+/* TEMPORARY CLIPPING TEST */
 
 .controller.custom {
-    width: 800px;
-    height: 600px;
-    position: relative;
-
-    background-image: url("https://spaz1n3.github.io/radiomaster-pocket-overlay/controller.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 800px 600px;
+    overflow: visible !important;
+    background-position: center center !important;
 }
 
-/* STICK CONTAINER */
 .custom .sticks {
-    position: absolute;
-    inset: 0;
+    overflow: visible !important;
 }
 
-/* STICK GRAPHICS */
+/* Hide moving stick graphics temporarily */
 .custom .stick {
-    width: 74px;
-    height: 74px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-/* LEFT STICK */
-.custom .stick.left {
-    background-image: url("https://spaz1n3.github.io/radiomaster-pocket-overlay/left_stick[1].png");
-}
-
-/* RIGHT STICK */
-.custom .stick.right {
-    background-image: url("https://spaz1n3.github.io/radiomaster-pocket-overlay/right_stick[1].png");
-}
-
-/* HIDE UNUSED CONTROLS */
-.custom .buttons,
-.custom .dpad,
-.custom .triggers,
-.custom .bumpers,
-.custom .quadrant,
-.custom .arrows,
-.custom .start,
-.custom .back,
-.custom .meta {
-    display: none;
+    display: none !important;
 }
