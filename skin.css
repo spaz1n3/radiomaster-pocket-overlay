@@ -7,7 +7,7 @@
     width: 800px;
     height: 600px;
     position: relative;
-    background: url("./controller.png") center center / 800px 600px no-repeat;
+    background: url("./controller[1].png") center center / 800px 600px no-repeat;
 }
 
 /* DISCONNECTED STATE */
@@ -40,14 +40,14 @@
 .custom .stick.left {
     left: 147px;
     top: 189px;
-    background-image: url("./left_stick.png");
+    background-image: url("./left_stick[1].png");
 }
 
 /* RIGHT STICK - PITCH / ROLL */
 .custom .stick.right {
     left: 553px;
     top: 189px;
-    background-image: url("./right_stick.png");
+    background-image: url("./right_stick[1].png");
 }
 
 /* HIDE UNUSED CONTROLS */
